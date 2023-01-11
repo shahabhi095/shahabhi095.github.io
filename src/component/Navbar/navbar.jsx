@@ -21,14 +21,14 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons';
-
-import About from '../About Me/About';
-let NavItem= {
-  label: "",
-  subLabel: "",
-  children: [],
-  href: "",
-}
+import { selectColor } from '../styles/styles';
+// import About from '../About Me/About';
+// let NavItem= {
+//   label: "",
+//   subLabel: "",
+//   children: [],
+//   href: "",
+// }
 
 const NAV_ITEMS = [
  
@@ -59,12 +59,15 @@ export default function WithSubnavigation() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
-        minH={'60px'}
+        bg={useColorModeValue(selectColor.Theme1, 'gray.800')}
+        color="whiteAlpha.700"
+        minH={"30%"}
+        mb={0} pb={0}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
+        pos="relative"
+        position={"static"}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}>
@@ -85,7 +88,7 @@ export default function WithSubnavigation() {
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
+            color={useColorModeValue('white.900', 'white')}>
            ABHINANDAN
           </Text>
 
@@ -106,12 +109,12 @@ export default function WithSubnavigation() {
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
-            color={'black'}
+            color={'#f6324b'}
             // bg={'pink.400'}
-            colorScheme='pink.400' variant='outline'
+            colorScheme='#f6324b' variant='outline'
             href={'#'}
             _hover={{
-              colorScheme:'pink.600',
+              colorScheme:'#f6324b',
               transition:".3s"
             }}>
             Resume
@@ -132,7 +135,7 @@ export default function WithSubnavigation() {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
-    <Stack direction={'row'} spacing={12}>
+    <Stack direction={'row'} spacing={12} mb={0} pb={0}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-end'}>
@@ -256,7 +259,7 @@ const MobileNavItem = ({ label, children, href }) => {
           pl={4}
           borderLeft={1}
           borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}
+          borderColor={useColorModeValue('white', 'gray.700')}
           align={'start'}>
           {children &&
             children.map((child) => (
