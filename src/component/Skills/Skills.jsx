@@ -1,127 +1,61 @@
-import React from 'react';
-import {
-  Box,
-  Stack,
-  Container,
-  Text
-} from '@chakra-ui/react';
-// Here we have used react-icons package for the icons
+import { SimpleGrid ,Heading, Text,Box} from "@chakra-ui/react"
+import "./Skills.css"
+import css3 from "./Skillslogo/css3.png"
 import github from "./Skillslogo/github.png"
-import react from "./Skillslogo/react.png"
+import javascript from "./Skillslogo/javascript.png"
 import mongodb from "./Skillslogo/mongodb.png"
 import nodejs from "./Skillslogo/nodejs.png"
+import react from "./Skillslogo/react.png"
 import redux from "./Skillslogo/redux.png"
 import typescript from "./Skillslogo/typescript.png"
-import css3 from "./Skillslogo/typescript.png"
-// And react-slick as our Carousel Lib
-import Slider from 'react-slick';
-
-// Settings for the slider
-const settings = {
-  dots: true,
-  arrows: false,
-  fade: true,
-  infinite: true,
-  autoplay: true,
-  speed: 500,
-  autoplaySpeed: 5000,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-};
-
-export default function CaptionCarousel() {
-  // As we have used custom buttons, we need a reference variable to
-  // change the state
- 
-
-  // These are the breakpoints which changes the position of the
-  // buttons as the screen size changes
+// import ChakraUI from "./Skillslogo/ChakraUI.png"
+// import Bootstrap from "./Skillslogo/Bootstrap.png"
+// import MaterialUI from "./Skillslogo/MaterialUI.png"
+// import Nextjs from "./Skillslogo/Nextjs.png"
 
 
-  // This list contains all the data for carousels
-  // This can be static or loaded from a server
-  const cards = [
-    {
-      image:
-       nodejs
-    },
-    {
-      image:
-       redux
-    },
-    {
-      image:
-        mongodb
-    },
-    {
-      image:
-       react
-    },
-    {
-      image:
-      github
-    },
-     {
-      image:
-       typescript
-    },
-    {
-      image:
-     css3
-    },
-  ];
 
+import SkillsCard from "./SkillsCard"
+
+
+
+
+const SkillsArray = [
+  {src:css3, tag:"Css"},
+  {src:github, tag:"GitHub"},
+  {src:javascript, tag:"JavaScript"},
+  {src:mongodb, tag:"MongoDb"},
+  {src:nodejs, tag:"NodeJs"},
+  {src:react, tag:"reactJs"},
+  {src:redux, tag:"Redux"},
+  {src:typescript, tag:"TypeScript"},
+  // {src:ChakraUI, tag:"Chakra UI"},
+  // {src:Bootstrap, tag:"Bootsrap"},
+  // {src:Nextjs, tag:"Next JS"},
+  // {src:MaterialUI, tag:"Material UI"},
+]
+
+
+const Skills = () => {
   return (
-    <Box   bg={"#1f2235"}>
-      <Text>These are the Tools I have worked with</Text>
-    <Box
-      position={'relative'}
-   
-      width={"20%"}
-      overflow={'hidden'}>
-      {/* CSS files for react-slick */}
-      <link
-        rel="stylesheet"
-        type="text/css"
-        charSet="UTF-8"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-      />
-      {/* Left Icon */}
-     
-      {/* Slider */}
-      <Slider {...settings} >
-        {cards.map((card, index) => (
-          <Box
-            key={index}
-           
-            position="relative"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            backgroundImage={`url(${card.image})`}>
-            {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height="200px" position="relative">
-              <Stack
-                spacing={6}
-               
-                
-                position="absolute"
-                top="50%"
-                transform="translate(0, -50%)">
-                
-              </Stack>
-            </Container>
-          </Box>
-        ))}
-      </Slider>
-    </Box>
-    
-    </Box>
-  
-  );
+    <div style={{backgroundColor:"#1f2235"}}>
+       <Heading fontSize={'2xl'} pt={8} fontFamily={'body'} fontWeight={500}>
+           Skills
+          </Heading>
+
+           <Text color={'white'} fontSize={'sm'} >
+            What I know
+          </Text>
+          <Box m={"auto"} border={"1px solid #f6324b"} w={"6%"}></Box>
+    <div className="SkillContainer">
+      
+      <SimpleGrid spacing={4} columns={{ base: 1, md: 2, lg:3 }} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+        {SkillsArray.map((el, i)=><SkillsCard  key={i} IMAGE = {el.src} tag={el.tag}/>)}
+
+</SimpleGrid>
+    </div>
+    </div>
+  )
 }
+export default Skills
+

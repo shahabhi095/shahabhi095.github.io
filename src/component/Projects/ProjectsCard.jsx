@@ -56,13 +56,16 @@ export default function ProductSimple({IMAGE,NAME,TECHSTACK,DISCRIPTION,GITHUB,D
           <Image
             rounded={'lg'}
             height={230}
-           
+            transition= {"background-color 2s ease-out 100ms"}
+           _hover={{              
+          height: 240,
+            }}
             objectFit={'cover'}
             src={IMAGE}
           />
         </Box>
         <Stack pt={10} align={'center'}>
-          <Heading color={'#f6324b'} fontSize={'xl'} textTransform={'uppercase'}>
+          <Heading color={'#f6324b'} fontSize={'xl'}>
            {NAME}
           </Heading>
           <Text color={'white.600'} fontFamily={'body'} >

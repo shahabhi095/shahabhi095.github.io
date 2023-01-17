@@ -20,10 +20,6 @@ export default function About() {
              About Me
             </Text>{' '}
           </Heading>
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
-          </Text>
          <Box mt={"2%"} border={"1px solid #f6324b"} w={"10%"}></Box>
       </Stack>
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>

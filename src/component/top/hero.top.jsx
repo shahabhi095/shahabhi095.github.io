@@ -42,8 +42,7 @@ export default function SplitScreen() {
             </Text>{' '}
           </Heading>
           <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white.500'}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
+           I love to make projects which are helpful for masses and serve as a great helpful entity.
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} align={"center"} justify={"center"} spacing={4}>
           <Link href="https://drive.google.com/file/d/1VGTPkPt5MM0tC34XWPv54MbkIU0fIs5T/view?usp=sharing">  <Button
@@ -55,7 +54,7 @@ export default function SplitScreen() {
               }}>
              <DownloadIcon/>{" "} Resume
             </Button></Link>
-            <Button color={'#f6324b'} rounded={'full'}>How It Works</Button>
+            <Button color={'#f6324b'} rounded={'full'}>Contact</Button>
           </Stack>
         </Stack>
       </Flex>
@@ -64,6 +63,7 @@ export default function SplitScreen() {
        
          p={"20%"}
       minH={"-moz-min-content"}
+      borderRadius={"10px"}
         sizes={{base:"60%",md:"50%", lg:"50%"}}
           alt={'Login Image'}
           objectFit={'cover'}

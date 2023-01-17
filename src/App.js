@@ -4,8 +4,9 @@ import WithSubnavigation from './component/Navbar/navbar';
 import About from './component/About Me/About';
 import SplitScreen from './component/top/hero.top';
 import { selectColor } from './component/styles/styles';
-import CaptionCarousel from "./component/Skills/Skills";
+import Skills from './component/Skills/Skills';
 import SimpleThreeColumns from './component/Projects/Projects';
+
 function App() {
   return (
     <div className="App" style={{ backgroundColor: selectColor.Theme1 }}>
@@ -13,8 +14,8 @@ function App() {
         <WithSubnavigation />
         <SplitScreen />
         <About />
-        <CaptionCarousel />
-        <SimpleThreeColumns/>
+        <Skills />
+        <SimpleThreeColumns />
       </div>
     </div>
   );

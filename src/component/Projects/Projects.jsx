@@ -7,7 +7,7 @@ import ProductSimple from './ProjectsCard';
 const ProjectsDetails=[
     {
       IMAGE:shine, 
-      NAME:"shine.com",
+      NAME:"shine.com (Clone)",
       TECHSTACK:[ "HTML" , "CSS", "JavaScript" ], 
       DISCRIPTION:"Shine.com is an online job portal & that also offers many courses for skills development.",
       GITHUB:"https://github.com/shahabhi095/glad-sail-5635",
@@ -15,15 +15,15 @@ const ProjectsDetails=[
     },
     {
       IMAGE:SkinStore, 
-      NAME:"SkinStore.com",
+      NAME:"SkinStore.com (Clone)",
       TECHSTACK:[ "HTML" , "CSS", "JavaScript" ], 
-      DISCRIPTION:"SkinStore.com is an E-commerce Website that provides many skincare and luxury spa products",
+      DISCRIPTION:"SkinStore.com is an E-commerce Website which sells skincare and luxury spa products",
       GITHUB:"https://github.com/shahabhi095/likely-cough-9107",
       DEPLOY:"https://beamish-cascaron-4c17b9.netlify.app/"
     },
     {
       IMAGE:chargebee, 
-      NAME:"chargebee.com",
+      NAME:"chargebee.com (Clone)",
       TECHSTACK:[ "HTML" , "CSS", "JavaScript", "ReactJs", "CkakraUi" ], 
       DISCRIPTION:"Chargebee provides all type of business solutions to different companies",
       GITHUB:"https://github.com/shahabhi095/ideal-carpenter-6870/tree/main/ideal-carpenter-6870",
@@ -43,11 +43,7 @@ export default function SimpleThreeColumns() {
              My Projects
             </Text>{' '}
           </Heading>
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
-          </Text>
-         <Box mt={"2%"} border={"1px solid #f6324b"} w={"10%"}></Box>
+         <Box mt={"5%"} border={"1px solid #f6324b"} w={"10%"}></Box>
       </Stack>
       <br /><br /><br />
       <SimpleGrid columns={{ base: 1, md: 2, lg:3 }} spacing={5}>
