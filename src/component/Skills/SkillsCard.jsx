@@ -14,60 +14,63 @@ export default function SkillsCard({IMAGE, tag}) {
   return (
     <Center py={12}>
       <Box
-        role={'group'}
-        p={6}
-        maxW={'330px'}
-        w={'full'}
-        bg={useColorModeValue('#f6324b', 'gray.800')}
-        boxShadow={'2xl'}
-        rounded={'lg'}
-        pos={'relative'}
-        zIndex={1}>
-
+        role={"group"}
+        p={4}
+        maxW={"320px"}
+        bg={useColorModeValue("#f6324b", "gray.800")}
+        boxShadow={"2xl"}
+        rounded={"lg"}
+        pos={"relative"}
+        zIndex={1}
+      >
         <Box
-        bg={"#23263a"}
-          rounded={'lg'}
+          bg={"#23263a"}
+          rounded={"lg"}
           mt={-12}
-          pos={'relative'}
-          height={'170px'}
+          pos={"relative"}
+          maxH={"170px"}
           _after={{
-            transition: 'all .3s ease',
+            transition: "all .3s ease",
             content: '""',
-            w: 'full',
-            h: 'full',
-            pos: 'absolute',
+            maxW: "full",
+            maxH: "full",
+            pos: "absolute",
             top: 5,
             left: 0,
             backgroundImage: `url(${IMAGE})`,
-            filter: 'blur(15px)',
+            filter: "blur(15px)",
             zIndex: -1,
           }}
           _groupHover={{
             _after: {
-              filter: 'blur(20px)',
-              
+              filter: "blur(20px)",
             },
-          }}>
+          }}
+        >
           <Image
-           transition= {"background-color 2s ease-out 100ms"}
-            rounded={'lg'}
-            height={160}
-            width={250}
-            objectFit={'cover'}
+            transition={"background-color 2s ease-out 100ms"}
+            rounded={"lg"}
+            maxH={160}
+            maxW={250}
+            objectFit={"cover"}
             _hover={{
-               width: 260,
-                height: 170,
-                bg:"#23263a"
+              maxW: 260,
+              maxH: 170,
+              bg: "#23263a",
             }}
-            
             src={IMAGE}
           />
         </Box>
-         <Stack align={'center'}>
-          <Text color={'white'} fontSize={'sm'} fontWeight={"600"} >
-          { tag}
+        <Stack align={"center"}>
+          <Text
+            color={"white"}
+            fontSize={["30px", "24px", "20px", "20px", "18px", "18px"]}
+            fontWeight={"600"}
+            pt={{base:"3"}}
+          >
+            {tag}
           </Text>
-          </Stack>
+        </Stack>
       </Box>
     </Center>
   );
