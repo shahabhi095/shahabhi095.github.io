@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e0647ff.css",
-    "main.js": "/static/js/main.27640f32.js",
+    "main.css": "/static/css/main.0c83212b.css",
+    "main.js": "/static/js/main.fd26836a.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/bigbasket.jpg": "/static/media/bigbasket.b8e29fc891965479b218.jpg",
     "static/media/shine.jpg": "/static/media/shine.f44bb05d8f8a056c4743.jpg",
     "static/media/SkinStore.jpg": "/static/media/SkinStore.630449a6922fbf5323cc.jpg",
+    "static/media/abh.jpg": "/static/media/abh.1ae40501a0cc7328fee3.jpg",
     "static/media/chagebee.jpg": "/static/media/chagebee.0c0075de2a3f9e7b8304.jpg",
-    "static/media/abh.jpg": "/static/media/abh.ed1784e97d14fd4ee436.jpg",
+    "static/media/Abhinandan.png": "/static/media/Abhinandan.9ebde589f56f910365ac.png",
     "static/media/react.png": "/static/media/react.56a2a7e1dc7e885846d2.png",
     "index.html": "/index.html",
-    "main.8e0647ff.css.map": "/static/css/main.8e0647ff.css.map",
-    "main.27640f32.js.map": "/static/js/main.27640f32.js.map",
+    "main.0c83212b.css.map": "/static/css/main.0c83212b.css.map",
+    "main.fd26836a.js.map": "/static/js/main.fd26836a.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e0647ff.css",
-    "static/js/main.27640f32.js"
+    "static/css/main.0c83212b.css",
+    "static/js/main.fd26836a.js"
   ]
 }
