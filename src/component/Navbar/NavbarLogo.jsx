@@ -5,6 +5,7 @@ const NavbarLogo = () => {
   return (
     <Box pl={3} width="100px">
       <Image
+      cursor={"pointer"}
         src={Abhinandan}
         borderRadius={"50%"}
         overflow="hidden"

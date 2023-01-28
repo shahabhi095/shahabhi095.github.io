@@ -18,49 +18,60 @@ const Navbar = () => {
         </Link>{" "}
         <HStack pr={10} spacing={[6, 8, 10, 12]} fontSize="20px">
           {" "}
-          <Link
-            to="About"
-            spy={true}
-            smooth={true}
-            offset={-40}
-            duration={500}
-            textDecoration="none"
-          >
-            About
-          </Link>
-          <Link
-            to="Skills"
-            spy={true}
-            smooth={true}
-            offset={-40}
-            duration={500}
-            textDecoration="none"
-          >
-            Skills
-          </Link>
-          <Link
-            to="Projects"
-            spy={true}
-            smooth={true}
-            offset={-40}
-            duration={500}
-            textDecoration="none"
-          >
-            Project
-          </Link>
-          <Link
-            to="Contact"
-            spy={true}
-            smooth={true}
-            offset={-40}
-            duration={500}
-            textDecoration="none"
-          >
-            Contact
-          </Link>
-          <Link>
-            <Button bg={"#f6324b"}>Resume</Button>
-          </Link>
+          <Box cursor={"pointer"}>
+            <Link
+              to="About"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+              textDecoration="none"
+            >
+              About
+            </Link>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Link
+              to="Skills"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+              textDecoration="none"
+            >
+              Skills
+            </Link>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Link
+              to="Projects"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+              textDecoration="none"
+              cu
+            >
+              Project
+            </Link>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Link
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+              textDecoration="none"
+            >
+              Contact
+            </Link>
+          </Box>
+          <Box cursor={"pointer"}>
+            <Link>
+              <Button bg={"#f6324b"}>Resume</Button>
+            </Link>
+          </Box>
         </HStack>
       </Flex>
     </Box>
