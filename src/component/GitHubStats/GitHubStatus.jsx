@@ -8,13 +8,14 @@ const GitHubStatus = () => {
         <Heading fontSize={{ base: "xl", md: "2xl", lg: "5xl" }}>
           Calender & Stats
         </Heading>
+        <Box m={"auto"} border={"2px solid #f6324b"} w={"10%"} mt={3}></Box>
       </Box>
       <br />
       <Flex justifyContent={"center"} pb={6} pt={6}>
         <GitHubCalendar username="shahabhi095" blockSize={16} fontSize={16} />
       </Flex>
       <Flex justifyContent={"center"} pb={6} pt={6}>
-        <Image  src="https://github-readme-streak-stats.herokuapp.com/?user=shahabhi095&theme=tokyonight&background=1a1b27"></Image>
+        <Image src="https://github-readme-streak-stats.herokuapp.com/?user=shahabhi095&theme=tokyonight&background=1a1b27"></Image>
       </Flex>
       <Flex justifyContent={"center"} pb={6} pt={6}>
         <Image src="https://github-readme-stats.vercel.app/api?username=shahabhi095&theme=tokyonight&show_icons=true"></Image>
