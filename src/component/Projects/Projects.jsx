@@ -12,7 +12,7 @@ const ProjectsDetails = [
     NAME: "shine.com (Clone)",
     TECHSTACK: ["HTML", "CSS", "JavaScript"],
     DISCRIPTION:
-      "Shine.com is an online job portal & that also offers many courses for skills development.",
+      "This is the clone of Shine.com which is an online job portal & that also offers many courses for skills development.",
     GITHUB: "https://github.com/shahabhi095/glad-sail-5635",
     DEPLOY: "https://cheery-moonbeam-c4a548.netlify.app/",
   },
@@ -21,7 +21,7 @@ const ProjectsDetails = [
     NAME: "SkinStore.com (Clone)",
     TECHSTACK: ["HTML", "CSS", "JavaScript"],
     DISCRIPTION:
-      "SkinStore.com is an E-commerce Website which sells skincare and luxury spa products",
+      "This is the clone of SkinStore.com which is an E-commerce Website which sells skincare and luxury spa products",
     GITHUB: "https://github.com/shahabhi095/likely-cough-9107",
     DEPLOY: "https://beamish-cascaron-4c17b9.netlify.app/",
   },
@@ -30,7 +30,7 @@ const ProjectsDetails = [
     NAME: "chargebee.com (Clone)",
     TECHSTACK: ["HTML", "CSS", "JavaScript", "ReactJs", "CkakraUi"],
     DISCRIPTION:
-      "Chargebee provides all type of business solutions to different companies",
+      "This is the clone of Chargebee which provides all type of business solutions to different companies",
     GITHUB:
       "https://github.com/shahabhi095/ideal-carpenter-6870/tree/main/ideal-carpenter-6870",
     DEPLOY: "https://radiant-twilight-79cabf.netlify.app/",
@@ -40,7 +40,7 @@ const ProjectsDetails = [
     NAME: "bigbasket.com (Clone)",
     TECHSTACK: ["HTML", "CSS", "JavaScript", "ReactJs", "NextJs", "CkakraUi"],
     DISCRIPTION:
-      "Bigbasket is an is India’s largest online food and grocery store.",
+      "This is the clone of Bigbasket which is an India’s largest online food and grocery store.",
     GITHUB: "https://github.com/alih6051/placid-plane-2533",
     DEPLOY: "https://placid-plane-2533.vercel.app/",
   },

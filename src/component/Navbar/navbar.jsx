@@ -1,9 +1,16 @@
-import { Box, Button, Flex, HStack} from "@chakra-ui/react";
+import { Box, Button, Flex, HStack } from "@chakra-ui/react";
 import React from "react";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 import NavbarLogo from "./NavbarLogo";
+import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
+
 
 const Navbar = () => {
+ const handleClick = () => {
+   window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
+   // return <Navigate to={Abhinandan_Kumar_Resume} />;
+ };
+
   return (
     <Box
       bg={"#2a2f4c"}
@@ -68,9 +75,11 @@ const Navbar = () => {
             </Link>
           </Box>
           <Box cursor={"pointer"}>
-            <Link>
-              <Button bg={"#f6324b"}>Resume</Button>
-            </Link>
+            <a href={Abhinandan_Kumar_Resume} download>
+              <Button onClick={handleClick} bg={"#f6324b"}>
+                Resume
+              </Button>
+            </a>
           </Box>
         </HStack>
       </Flex>

@@ -1,4 +1,6 @@
 import { selectColor } from "../styles/styles";
+import { Link } from "react-scroll";
+import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
 // import "./hero.css"
 import abh from "./abh.jpg";
 import { DownloadIcon } from "@chakra-ui/icons";
@@ -10,21 +12,35 @@ import {
   Image,
   Stack,
   Text,
-  Link,
   useBreakpointValue,
  
 } from "@chakra-ui/react";
+
+
 // import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
 export default function IntroSection() {
+
+  const handleClick=()=>{
+     window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
+// return <Navigate to={Abhinandan_Kumar_Resume} />;
+  }
+
   return (
-    <Box mt={0} pt={11} pb={12} bg={selectColor.Theme2}  id="Home">
+    <Box mt={0} pt={11} pb={12} bg={selectColor.Theme2} id="Home">
       <Stack
         pb={15}
         minH={"60vh"}
         spacing={"-1"}
         direction={["column", "column", "column", "row", "row", "row"]}
       >
-        <Flex pt="6%" pb={"6%"} flex={1} align={"center"} justify={"center"} pl={3} >
+        <Flex
+          pt="6%"
+          pb={"6%"}
+          flex={1}
+          align={"center"}
+          justify={"center"}
+          pl={3}
+        >
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
               <Text
@@ -61,13 +77,10 @@ export default function IntroSection() {
               justifyContent={"center"}
               spacing={6}
             >
-              <Link
-                textDecoration={"none"}
-                href="./Abhinandan_Kumar_Resume.pdf"
-                download={"Abhinandan_Kumar_Resume"}
-              >
+              <a href={Abhinandan_Kumar_Resume} download>
                 {" "}
                 <Button
+                onClick={handleClick}
                   rounded={"full"}
                   bg={"#f6324b"}
                   color={"white"}
@@ -77,10 +90,18 @@ export default function IntroSection() {
                 >
                   <DownloadIcon /> Resume
                 </Button>
+              </a>
+              <Link
+                to="Contact"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={1000}
+              >
+                <Button color={"#f6324b"} rounded={"full"}>
+                  Contact
+                </Button>
               </Link>
-              <Button color={"#f6324b"} rounded={"full"}>
-                Contact
-              </Button>
             </Stack>
           </Stack>
         </Flex>
