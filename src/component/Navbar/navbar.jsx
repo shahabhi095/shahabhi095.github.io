@@ -24,7 +24,18 @@ const Navbar = () => {
           <NavbarLogo />
         </Link>{" "}
         <HStack pr={10} spacing={[6, 8, 10, 12]} fontSize="20px">
-          {" "}
+          <Box cursor={"pointer"}>
+            <Link
+              to="Home"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+              textDecoration="none"
+            >
+              Home
+            </Link>
+          </Box>{" "}
           <Box cursor={"pointer"}>
             <Link
               to="About"
