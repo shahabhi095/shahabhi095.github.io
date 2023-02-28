@@ -6,11 +6,10 @@ import {
   Stack,
   Text,
   useBreakpointValue,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 // import Carousel from './crousel';
 
 export default function About() {
- 
   return (
     <Box bg={"#23263a"} id={"About"}>
       <br />
@@ -21,11 +20,11 @@ export default function About() {
         alignItems={"center"}
         justifyContent={"center"}
       >
-        <Text color={" #f6324b"}>WHO AM I ?</Text>
+        <Text color={" #2b6cb0"}>WHO AM I ?</Text>
         <Heading fontSize={{ base: "xl", md: "2xl", lg: "5xl" }}>
           About Me
         </Heading>
-        <Box mt={"2%"} border={"1px solid #f6324b"} w={"15%"}></Box>
+        <Box mt={"2%"} border={"1px solid #2b6cb0"} w={"15%"}></Box>
       </Stack>
       <Stack
         minH={"50vh"}
@@ -63,7 +62,7 @@ export default function About() {
               <Heading
                 fontSize={{ base: "xl", md: "2xl", lg: "2xl" }}
                 textAlign={"left"}
-                color="#f6324b"
+                color="#2b6cb0"
               >
                 <Text
                   as={"span"}

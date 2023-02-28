@@ -1,5 +1,4 @@
 import {
-
   Flex,
   Box,
   Heading,
@@ -15,24 +14,18 @@ import {
   Textarea,
   HStack,
   Link,
-} from '@chakra-ui/react';
- import { AiOutlineLinkedin } from "react-icons/ai";
-  import { BsTelephone } from "react-icons/bs";
+} from "@chakra-ui/react";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs";
 
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdOutlineEmail,
- 
-} from "react-icons/md";
-import { BsGithub, BsPerson } from 'react-icons/bs';
-import React from 'react'
+import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
+import { BsGithub, BsPerson } from "react-icons/bs";
+import React from "react";
 
 const ContactMe = () => {
   return (
     <Box p={12} id="Contact">
-      <Text color={"#f6324b"} textAlign="center" pb={3}>
+      <Text color={"#2b6cb0"} textAlign="center" pb={3}>
         GET IN TOUCH
       </Text>
       <Heading
@@ -42,7 +35,7 @@ const ContactMe = () => {
       >
         Conatct Me
       </Heading>
-      <Box mt={"2%"} border={"1px solid #f6324b"} w={"10%"} m="auto"></Box>
+      <Box mt={"2%"} border={"1px solid #2b6cb0"} w={"10%"} m="auto"></Box>
       <br />
       <br />
       <Flex
@@ -227,8 +220,6 @@ const ContactMe = () => {
       </Flex>
     </Box>
   );
-}
+};
 
-export default ContactMe
-
-
+export default ContactMe;

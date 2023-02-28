@@ -1,11 +1,10 @@
-
-import { Box, SimpleGrid, Text, Stack,Heading} from '@chakra-ui/react';
-import shine from "./projectImage/shine.jpg"
-import SkinStore from "./projectImage/SkinStore.jpg"
-import chargebee from "./projectImage/chagebee.jpg"
+import { Box, SimpleGrid, Text, Stack, Heading } from "@chakra-ui/react";
+import shine from "./projectImage/shine.jpg";
+import SkinStore from "./projectImage/SkinStore.jpg";
+import chargebee from "./projectImage/chagebee.jpg";
 import bigbasket from "./projectImage/bigbasket.jpg";
 
-import ProjectsCard from './ProjectsCard';
+import ProjectsCard from "./ProjectsCard";
 const ProjectsDetails = [
   {
     IMAGE: shine,
@@ -46,26 +45,25 @@ const ProjectsDetails = [
   },
 ];
 
-
 export default function SimpleThreeColumns() {
   return (
     <Box p={4} id="Projects">
       <br />
 
       <Stack w={"50%"} m={"auto"} align={"center"} justifyContent={"center"}>
-        <Text color={"#f6324b"}>MY WORK</Text>
+        <Text color={"#2b6cb0"}>MY WORK</Text>
         <Heading fontSize={{ base: "xl", md: "2xl", lg: "5xl" }}>
           Creative Projects
         </Heading>
-        <Box mt={"5%"} border={"1px solid #f6324b"} w={"10%"}></Box>
+        <Box mt={"5%"} border={"1px solid #2b6cb0"} w={"10%"}></Box>
       </Stack>
       <br />
       <br />
       <br />
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={5}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={5}>
         {ProjectsDetails.map((item, i) => (
           <ProjectsCard
-            id={i}
+        
             IMAGE={item.IMAGE}
             NAME={item.NAME}
             TECHSTACK={item.TECHSTACK}

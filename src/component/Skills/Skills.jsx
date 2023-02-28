@@ -33,7 +33,7 @@ const SkillsArray = [
 const Skills = () => {
   return (
     <Box style={{ backgroundColor: "#1f2235" }} pt={10} id="Skills">
-      <Text color={" #f6324b"} fontSize={"lg"} textAlign="center">
+      <Text color={" #2b6cb0"} fontSize={"lg"} textAlign="center">
         What I know ?
       </Text>
       <Heading
@@ -43,7 +43,7 @@ const Skills = () => {
         Technical Skills
       </Heading>
 
-      <Box m={"auto"} border={"1px solid #f6324b"} w={"6%"} mb={3}></Box>
+      <Box m={"auto"} border={"1px solid #2b6cb0"} w={"6%"} mb={3}></Box>
       <Box className="SkillContainer" z-index={1} width="80%" margin="auto">
         <SimpleGrid
           // spacing={[6, 6, 5, 5, 4]}
@@ -57,8 +57,8 @@ const Skills = () => {
           columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
         >
           {SkillsArray.map((el, i) => (
-            <Box m={1}>
-              <SkillsCard key={i} IMAGE={el.src} tag={el.tag} />
+            <Box m={1} key={i}>
+              <SkillsCard IMAGE={el.src} tag={el.tag} />
             </Box>
           ))}
         </SimpleGrid>

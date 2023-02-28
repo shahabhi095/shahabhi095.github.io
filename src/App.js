@@ -10,9 +10,11 @@ import Navbar from "./component/Navbar/navbar";
 import ContactMe from "./component/Contact/ContactMe";
 import { Box } from "@chakra-ui/react";
 import GitHubStatus from "./component/GitHubStats/GitHubStatus";
+
 function App() {
   return (
-    <Box className="App" bg={selectColor.Theme1} color="white" >
+    <Box className="App" bg={selectColor.Theme1} color="white">
+      
       <Box className="box_shado">
         <Navbar />
 
@@ -20,7 +22,7 @@ function App() {
         <About />
         <Skills />
         <SimpleThreeColumns />
-      <GitHubStatus/>
+        <GitHubStatus />
         <ContactMe />
       </Box>
     </Box>

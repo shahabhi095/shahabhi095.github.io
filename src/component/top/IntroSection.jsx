@@ -13,17 +13,14 @@ import {
   Stack,
   Text,
   useBreakpointValue,
- 
 } from "@chakra-ui/react";
-
 
 // import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
 export default function IntroSection() {
-
-  const handleClick=()=>{
-     window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
-// return <Navigate to={Abhinandan_Kumar_Resume} />;
-  }
+  const handleClick = () => {
+    window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
+    // return <Navigate to={Abhinandan_Kumar_Resume} />;
+  };
 
   return (
     <Box mt={0} pt={11} pb={12} bg={selectColor.Theme2} id="Home">
@@ -53,14 +50,14 @@ export default function IntroSection() {
                   position: "absolute",
                   bottom: 1,
                   left: 0,
-                  bg: "#f6324b",
+                  bg: "#2b6cb0",
                   zIndex: -1,
                 }}
               >
                 Hi 👋 I'm Developer
               </Text>
               <br />{" "}
-              <Text color={"#f6324b"} as={"span"}>
+              <Text color={"#2b6cb0"} as={"span"}>
                 Abhinandan Kumar
               </Text>{" "}
             </Heading>
@@ -80,12 +77,12 @@ export default function IntroSection() {
               <a href={Abhinandan_Kumar_Resume} download>
                 {" "}
                 <Button
-                onClick={handleClick}
+                  onClick={handleClick}
                   rounded={"full"}
-                  bg={"#f6324b"}
+                  bg={"#2b6cb0"}
                   color={"white"}
                   _hover={{
-                    bg: "#f6324b",
+                    bg: "#2b6cb0",
                   }}
                 >
                   <DownloadIcon /> Resume
@@ -98,7 +95,7 @@ export default function IntroSection() {
                 offset={-40}
                 duration={1000}
               >
-                <Button color={"#f6324b"} rounded={"full"}>
+                <Button color={"#2b6cb0"} rounded={"full"}>
                   Contact
                 </Button>
               </Link>
@@ -132,5 +129,3 @@ export default function IntroSection() {
     </Box>
   );
 }
-
-

@@ -5,19 +5,19 @@ import {
   Text,
   Stack,
   Image,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 // const IMAGE =
 //   'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
 
-export default function SkillsCard({IMAGE, tag}) {
+export default function SkillsCard({ IMAGE, tag }) {
   return (
     <Center py={12}>
       <Box
         role={"group"}
         p={4}
         maxW={"320px"}
-        bg={useColorModeValue("#f6324b", "gray.800")}
+        bg={useColorModeValue("#2b6cb0", "gray.800")}
         boxShadow={"2xl"}
         rounded={"lg"}
         pos={"relative"}
@@ -66,7 +66,7 @@ export default function SkillsCard({IMAGE, tag}) {
             color={"white"}
             fontSize={["30px", "24px", "20px", "20px", "18px", "18px"]}
             fontWeight={"600"}
-            pt={{base:"3"}}
+            pt={{ base: "3" }}
           >
             {tag}
           </Text>

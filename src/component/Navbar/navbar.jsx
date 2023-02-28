@@ -1,15 +1,23 @@
-import { Box, Button, Flex, HStack } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Spacer, useDisclosure } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-scroll";
 import NavbarLogo from "./NavbarLogo";
 import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
+import NavbarDrawer from "./NavbarDrawer";
+
+
+
+const Navitem = ["Home", "About me", "Skills","Project",
+"Contact"];
 
 
 const Navbar = () => {
- const handleClick = () => {
-   window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
-   // return <Navigate to={Abhinandan_Kumar_Resume} />;
- };
+ //const { isOpen, onToggle } = useDisclosure();
+const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleClick = () => {
+    window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
+    // return <Navigate to={Abhinandan_Kumar_Resume} />;
+  };
 
   return (
     <Box
@@ -22,8 +30,14 @@ const Navbar = () => {
       <Flex alignItems="center" justifyContent={"space-between"}>
         <Link to="Home" spy={true} smooth={true} offset={-40} duration={500}>
           <NavbarLogo />
-        </Link>{" "}
-        <HStack pr={10} spacing={[6, 8, 10, 12]} fontSize="20px">
+        </Link>
+        {isOpen?<Spacer />:null}
+        <HStack
+          pr={10}
+          spacing={[6, 8, 10, 10]}
+          display={{ sm: "none", base: "none", md: "none", lg: "flex" }}
+          fontSize="20px"
+        >
           <Box cursor={"pointer"}>
             <Link
               to="Home"
@@ -45,7 +59,7 @@ const Navbar = () => {
               duration={500}
               textDecoration="none"
             >
-              About
+              About me
             </Link>
           </Box>
           <Box cursor={"pointer"}>
@@ -85,14 +99,15 @@ const Navbar = () => {
               Contact
             </Link>
           </Box>
-          <Box cursor={"pointer"}>
-            <a href={Abhinandan_Kumar_Resume} download>
-              <Button onClick={handleClick} bg={"#f6324b"}>
-                Resume
-              </Button>
-            </a>
-          </Box>
         </HStack>
+        <Box cursor={"pointer"} pr={4}>
+          <a href={Abhinandan_Kumar_Resume} download>
+            <Button onClick={handleClick} bg={"#2b6cb0"} fontSize={["40px","24px", "auto"]}>
+              Resume
+            </Button>
+          </a>
+        </Box>
+        <NavbarDrawer isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
       </Flex>
     </Box>
   );

@@ -15,15 +15,17 @@ import { FaGithub } from "react-icons/fa";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function ProjectsCard({
+  
   IMAGE,
   NAME,
   TECHSTACK,
   DISCRIPTION,
   GITHUB,
   DEPLOY,
+  
 }) {
   return (
-    <Center py={12}>
+    <Center py={12} key={NAME+"b"}>
       <Box
         role={"group"}
         p={6}
@@ -59,8 +61,8 @@ export default function ProjectsCard({
           }}
         >
           <Image
-          width={"100%"}
-          overflow={"hidden"}
+            width={"100%"}
+            overflow={"hidden"}
             rounded={"lg"}
             height={230}
             transition={"background-color 2s ease-out 100ms"}
@@ -72,7 +74,7 @@ export default function ProjectsCard({
           />
         </Box>
         <Stack pt={10} align={"center"}>
-          <Heading color={"#f6324b"} fontSize={"xl"}>
+          <Heading color={"#2b6cb0"} fontSize={"xl"}>
             {NAME}
           </Heading>
           <Text color={"white.600"} fontFamily={"body"}>
@@ -84,14 +86,14 @@ export default function ProjectsCard({
               Tech Stack:
             </Heading> */}
             <Wrap spacing="10px" justify="center" h={"60px"}>
-              {TECHSTACK.map((tech) => (
-                <WrapItem>
+              {TECHSTACK.map((tech,i) => (
+                <WrapItem key={i+"abc"}>
                   <Center
                     variant="solid"
                     fontWeight={600}
                     w="100px"
                     h="20px"
-                    bg="#f6324b"
+                    bg="#2b6cb0"
                     p={"3"}
                     borderRadius="8px"
                   >
@@ -108,7 +110,7 @@ export default function ProjectsCard({
                 textDecoration="none"
                 leftIcon={<FaGithub />}
                 colorScheme="pink"
-                bg="#f6324b"
+                bg="#2b6cb0"
                 variant="solid"
               >
                 Github
