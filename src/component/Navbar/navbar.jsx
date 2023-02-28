@@ -7,9 +7,6 @@ import NavbarDrawer from "./NavbarDrawer";
 
 
 
-const Navitem = ["Home", "About me", "Skills","Project",
-"Contact"];
-
 
 const Navbar = () => {
  //const { isOpen, onToggle } = useDisclosure();
@@ -102,7 +99,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
         </HStack>
         <Box cursor={"pointer"} pr={4}>
           <a href={Abhinandan_Kumar_Resume} download>
-            <Button onClick={handleClick} bg={"#2b6cb0"} fontSize={["40px","24px", "auto"]}>
+            <Button onClick={handleClick} bg={"#2b6cb0"} fontSize={["24px","20px", "16px"]}>
               Resume
             </Button>
           </a>

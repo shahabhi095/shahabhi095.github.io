@@ -31,7 +31,7 @@ export default function ProjectsCard({
         p={6}
         maxW={"400px"}
         w={"full"}
-        bg={useColorModeValue("#23263a", "white.800")}
+        bg={useColorModeValue("black", "white.800")}
         boxShadow={"2xl"}
         rounded={"lg"}
         pos={"relative"}
