@@ -9,7 +9,7 @@ import NavbarDrawer from "./NavbarDrawer";
 
 
 const Navbar = () => {
- //const { isOpen, onToggle } = useDisclosure();
+
 const { isOpen, onOpen, onClose } = useDisclosure();
   const handleClick = () => {
     window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");

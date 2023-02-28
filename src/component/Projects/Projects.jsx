@@ -22,7 +22,7 @@ const ProjectsDetails = [
     DISCRIPTION:
       "This is the clone of SkinStore.com which is an E-commerce Website which sells skincare and luxury spa products",
     GITHUB: "https://github.com/shahabhi095/likely-cough-9107",
-    DEPLOY: "https://beamish-cascaron-4c17b9.netlify.app/",
+    DEPLOY: "https://skinstore-lemon.vercel.app/",
   },
   {
     IMAGE: chargebee,

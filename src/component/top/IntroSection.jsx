@@ -74,7 +74,7 @@ export default function IntroSection() {
               justifyContent={"center"}
               spacing={6}
             >
-              <a href={Abhinandan_Kumar_Resume} download>
+              <a href={Abhinandan_Kumar_Resume} download="fw21_1086-Abhinandan-Kumar-Resume">
                 {" "}
                 <Button
                   onClick={handleClick}

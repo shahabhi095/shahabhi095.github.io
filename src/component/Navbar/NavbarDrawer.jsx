@@ -27,6 +27,7 @@ const NavbarDrawer = ({ isOpen, onOpen, onClose }) => {
         placement={"left"}
         onClose={onClose}
         isOpen={isOpen}
+        
         size={["full", "2xl", "sm", "xs"]}
       >
         <DrawerOverlay />
