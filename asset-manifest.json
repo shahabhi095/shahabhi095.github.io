@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.0c83212b.css",
-    "main.js": "/static/js/main.467aac71.js",
+    "main.js": "/static/js/main.c3bb9aa7.js",
     "static/media/Abhinandan_Kumar_Resume.pdf": "/static/media/Abhinandan_Kumar_Resume.86cbbdaa56102387d7f7.pdf",
     "static/media/bigbasket.jpg": "/static/media/bigbasket.b8e29fc891965479b218.jpg",
     "static/media/shine.jpg": "/static/media/shine.f44bb05d8f8a056c4743.jpg",
     "static/media/SkinStore.jpg": "/static/media/SkinStore.630449a6922fbf5323cc.jpg",
-    "static/media/abh.jpg": "/static/media/abh.1ae40501a0cc7328fee3.jpg",
     "static/media/chagebee.jpg": "/static/media/chagebee.0c0075de2a3f9e7b8304.jpg",
+    "static/media/abh.jpg": "/static/media/abh.c0e7dbf7f2bbc8ef9b7e.jpg",
     "static/media/mongooseIcon.png": "/static/media/mongooseIcon.51275a001caf5e6e30d4.png",
     "static/media/react.png": "/static/media/react.b19a7ea62269e54657b2.png",
     "static/media/Abhinandan.png": "/static/media/Abhinandan.9ebde589f56f910365ac.png",
@@ -20,10 +20,10 @@
     "static/media/tailwind.svg": "/static/media/tailwind.e7b4a92d5aefbddd6f0651c024144be2.svg",
     "index.html": "/index.html",
     "main.0c83212b.css.map": "/static/css/main.0c83212b.css.map",
-    "main.467aac71.js.map": "/static/js/main.467aac71.js.map"
+    "main.c3bb9aa7.js.map": "/static/js/main.c3bb9aa7.js.map"
   },
   "entrypoints": [
     "static/css/main.0c83212b.css",
-    "static/js/main.467aac71.js"
+    "static/js/main.c3bb9aa7.js"
   ]
 }
