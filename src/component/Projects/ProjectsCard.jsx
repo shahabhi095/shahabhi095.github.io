@@ -82,9 +82,7 @@ export default function ProjectsCard({
           </Text>
 
           <Stack direction={"row"} color={"white.600"} align={"left"}>
-            {/* <Heading fontWeight={600} w={"100px"} fontSize={'md'}>
-              Tech Stack:
-            </Heading> */}
+           
             <Wrap spacing="10px" justify="center" h={"60px"}>
               {TECHSTACK.map((tech,i) => (
                 <WrapItem key={i+"abc"}>

@@ -1,7 +1,6 @@
 import { selectColor } from "../styles/styles";
 import { Link } from "react-scroll";
 import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
-// import "./hero.css"
 import abh from "./abh.jpg";
 import { DownloadIcon } from "@chakra-ui/icons";
 import {
@@ -15,7 +14,6 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-// import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
 export default function IntroSection() {
   const handleClick = () => {
     window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
@@ -119,7 +117,7 @@ export default function IntroSection() {
               width="100%"
               overflow={"hidden"}
               borderRadius={"50%"}
-              sizes={{ base: "60%", md: "50%", lg: "50%" }}
+              sizes={{ base: "60%", md: "70%", lg: "70%" }}
               alt={"Login Image"}
               src={abh}
             />
