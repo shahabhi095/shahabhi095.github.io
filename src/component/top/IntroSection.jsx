@@ -1,5 +1,6 @@
 import { selectColor } from "../styles/styles";
 import { Link } from "react-scroll";
+import "./hero.css";
 import Abhinandan_Kumar_Resume from "./Abhinandan_Kumar_Resume.pdf";
 import abh from "./abh.jpg";
 import { DownloadIcon } from "@chakra-ui/icons";
@@ -13,8 +14,21 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
-
+import React, { useState, useEffect } from "react";
 export default function IntroSection() {
+const [text, setText] = useState("");
+const [fullText, setFullText] = useState("Hi 👋 I'm Developer");
+const [index, setIndex] = useState(0);
+useEffect(() => {
+  if (index < fullText.length) {
+    setTimeout(() => {
+      setText(text + fullText[index]);
+      setIndex(index + 1);
+    }, 200);
+  }
+}, [index]);
+
+
   const handleClick = () => {
     window.open(Abhinandan_Kumar_Resume, "_blank", "noreferrer");
     // return <Navigate to={Abhinandan_Kumar_Resume} />;
@@ -36,7 +50,7 @@ export default function IntroSection() {
           justify={"center"}
           pl={3}
         >
-          <Stack spacing={6} w={"full"} maxW={"lg"}>
+          <Stack spacing={6} w={"full"} maxW={"lg"} textAlign="center">
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
               <Text
                 as={"span"}
@@ -52,10 +66,11 @@ export default function IntroSection() {
                   zIndex: -1,
                 }}
               >
-                Hi 👋 I'm Developer
+                {text}
+                {/* Hi 👋 I'm Developer */}
               </Text>
               <br />{" "}
-              <Text color={"#2b6cb0"} as={"span"}>
+              <Text color={"#2b6cb0"} as={"span"} animation={""}>
                 Abhinandan Kumar
               </Text>{" "}
             </Heading>
@@ -72,7 +87,10 @@ export default function IntroSection() {
               justifyContent={"center"}
               spacing={6}
             >
-              <a href={Abhinandan_Kumar_Resume} download="fw21_1086-Abhinandan-Kumar-Resume">
+              <a
+                href={Abhinandan_Kumar_Resume}
+                download="fw21_1086-Abhinandan-Kumar-Resume"
+              >
                 {" "}
                 <Button
                   onClick={handleClick}
@@ -106,17 +124,24 @@ export default function IntroSection() {
           alignItems={"center"}
           pt="6%"
           pb={"6%"}
+          border={"0px solid red"}
         >
           <Box
             m="0"
             p="0"
-            borderRadius={"50%"}
+            width={"50%"}
+            // borderRadius={"30%"}
+            borderTopLeftRadius={"20%"}
+            borderBottomRightRadius={"20%"}
             boxShadow="-1px -1px 5px 5px #1f08eb"
           >
             <Image
+              p={"3%"}
               width="100%"
               overflow={"hidden"}
-              borderRadius={"50%"}
+              borderTopLeftRadius={"20%"}
+              borderBottomRightRadius={"20%"}
+              // borderRadius={"30%"}
               sizes={{ base: "60%", md: "70%", lg: "70%" }}
               alt={"Login Image"}
               src={abh}
