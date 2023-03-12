@@ -3,11 +3,9 @@ import {
   Center,
   Text,
   Image,
+  VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
-
-// const IMAGE =
-//   'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
 
 export default function SkillsCard({ IMAGE, tag }) {
    const [isHovering, setHovering] = useState("");
@@ -19,7 +17,7 @@ export default function SkillsCard({ IMAGE, tag }) {
      setHovering(false);
    }
   return (
-    <Center py={8}>
+    <VStack py={8}>
       <Box
       position={"relative"}
         onMouseEnter={handleMouseEnter}
@@ -53,7 +51,7 @@ export default function SkillsCard({ IMAGE, tag }) {
           {tag}
         </Text>
       </Box>
-    </Center>
+    </VStack>
   );
 }
 

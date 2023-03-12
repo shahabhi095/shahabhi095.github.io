@@ -7,14 +7,15 @@ import bigbasket from "./projectImage/bigbasket.jpg";
 import ProjectsCard from "./ProjectsCard";
 const ProjectsDetails = [
   {
-    IMAGE: shine,
-    NAME: "shine.com (Clone)",
-    TECHSTACK: ["HTML", "CSS", "JavaScript"],
+    IMAGE: bigbasket,
+    NAME: "bigbasket.com (Clone)",
+    TECHSTACK: ["HTML", "CSS", "JavaScript", "ReactJs", "NextJs", "CkakraUi"],
     DISCRIPTION:
-      "This is the clone of Shine.com which is an online job portal & that also offers many courses for skills development.",
-    GITHUB: "https://github.com/shahabhi095/glad-sail-5635",
-    DEPLOY: "https://cheery-moonbeam-c4a548.netlify.app/",
+      "This is the clone of Bigbasket which is an India’s largest online food and grocery store.",
+    GITHUB: "https://github.com/alih6051/placid-plane-2533",
+    DEPLOY: "https://digibasket.vercel.app/",
   },
+
   {
     IMAGE: SkinStore,
     NAME: "SkinStore.com (Clone)",
@@ -35,13 +36,13 @@ const ProjectsDetails = [
     DEPLOY: "https://radiant-twilight-79cabf.netlify.app/",
   },
   {
-    IMAGE: bigbasket,
-    NAME: "bigbasket.com (Clone)",
-    TECHSTACK: ["HTML", "CSS", "JavaScript", "ReactJs", "NextJs", "CkakraUi"],
+    IMAGE: shine,
+    NAME: "shine.com (Clone)",
+    TECHSTACK: ["HTML", "CSS", "JavaScript"],
     DISCRIPTION:
-      "This is the clone of Bigbasket which is an India’s largest online food and grocery store.",
-    GITHUB: "https://github.com/alih6051/placid-plane-2533",
-    DEPLOY: "https://placid-plane-2533.vercel.app/",
+      "This is the clone of Shine.com which is an online job portal & that also offers many courses for skills development.",
+    GITHUB: "https://github.com/shahabhi095/glad-sail-5635",
+    DEPLOY: "https://cheery-moonbeam-c4a548.netlify.app/",
   },
 ];
 
@@ -60,7 +61,7 @@ export default function SimpleThreeColumns() {
       <br />
       <br />
       <br />
-      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={5}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} >
         {ProjectsDetails.map((item, i) => (
           <ProjectsCard
         

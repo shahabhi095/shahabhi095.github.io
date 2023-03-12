@@ -54,10 +54,11 @@ const Skills = () => {
       </Heading>
 
       <Box m={"auto"} border={"1px solid #2b6cb0"} w={"6%"} mb={3}></Box>
+     
       <Box className="SkillContainer" z-index={1} margin="auto">
-        <SimpleGrid columns={[2,3,4,6]}>
+        <SimpleGrid columns={{base:2, sm:2, md:4, lg:6}} bg="red">
           {SkillsArray.map((el, i) => (
-            <Box m={1} key={i}>
+            <Box  key={i}>
               <SkillsCard IMAGE={el.src} tag={el.tag} />
             </Box>
           ))}
