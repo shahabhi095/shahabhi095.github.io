@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c83212b.css",
-    "main.js": "/static/js/main.b5d2747c.js",
+    "main.js": "/static/js/main.632a23bb.js",
     "static/media/Abhinandan_Kumar_Resume.pdf": "/static/media/Abhinandan_Kumar_Resume.86cbbdaa56102387d7f7.pdf",
     "static/media/bigbasket.jpg": "/static/media/bigbasket.b8e29fc891965479b218.jpg",
     "static/media/shine.jpg": "/static/media/shine.f44bb05d8f8a056c4743.jpg",
@@ -20,10 +20,10 @@
     "static/media/tailwind.svg": "/static/media/tailwind.e7b4a92d5aefbddd6f0651c024144be2.svg",
     "index.html": "/index.html",
     "main.0c83212b.css.map": "/static/css/main.0c83212b.css.map",
-    "main.b5d2747c.js.map": "/static/js/main.b5d2747c.js.map"
+    "main.632a23bb.js.map": "/static/js/main.632a23bb.js.map"
   },
   "entrypoints": [
     "static/css/main.0c83212b.css",
-    "static/js/main.b5d2747c.js"
+    "static/js/main.632a23bb.js"
   ]
 }
